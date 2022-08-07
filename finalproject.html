@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    body { 
+      background-color: #B5C7CC;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: -10px;
+      background-image: linear-gradient(#587B89,#B5C7CC);
+      color: #244C66;
+      border: none;
+      border-radius: 5px;
+    }
+    h2 {
+      text-align: center;
+      margin-top: 0px;
+      padding-bottom: 10px;
+      color:#407D6C;
+    }
+    img {
+      width: 500px;
+      display: block;
+      margin: auto;
+      border: #587B89 outset 20px;
+      padding: 10px;
+    }
+    a {
+      text-align: center;
+      display: block;
+      text-decoration: none;
+    }
+    div {
+      text-align: center;
+      font-weight: 200;
+      color: #2a5246;
+      line-height: 25px;
+    }
+    p {
+      font-size: large;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 200;
+      color: #2a5246;
+      line-height: 25px;
+    }
+    .par2 {
+      font-size: large;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .par3 {
+      font-size: large;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin-bottom: 20px;
+    }
+    button { 
+    color: white;
+    padding: 20px;
+    display: block;
+    background:  #7DB290;
+    margin: auto;
+    border: 1px  #7DB290 solid;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: all 200ms ease-in-out;
+    } 
+    button:hover{ 
+    color:  #7DB290;
+    background-color: white;
+    cursor: pointer;
+    } 
+  </style>
+   <banner>
+   <h1>Koalas</h1>
+   <h2><em>The World's Custest Animal</em></h2>
+   </banner>
+   <hr>
+   <br>
+   <button>Click Me</button>
+   <br>
+
+<img src="https://www.expeditionwildlife.com/wp-content/uploads/2020/09/koala-1259681_1280-scaled.jpg" alt="koalafamily">
+<div>img source:</div> 
+<a href="https://www.expeditionwildlife.com/all-about-koalas/">Exepdition Wildlife</a>
+<hr>
+<p>
+  <strong>The koala</strong> or, inaccurately, koala bear (Phascolarctos cinereus) is an arboreal herbivorous marsupial native to Australia. It is the only extant representative of the family Phascolarctidae and its closest living relatives are the wombats. The koala is found in coastal areas of the mainland's eastern and southern regions, inhabiting Queensland, New South Wales, Victoria, and South Australia. It is easily recognisable by its stout, tailless body and large head with round, fluffy ears and large, spoon-shaped nose. The koala has a body length of 60–85 cm (24–33 in) and weighs 4–15 kg (9–33 lb). Fur colour ranges from silver grey to chocolate brown. Koalas from the northern populations are typically smaller and lighter in colour than their counterparts further south. These populations possibly are separate subspecies, but this is disputed.
+</p>
+<div class="par2">
+  <strong>Koalas</strong> typically inhabit open Eucalyptus woodland, as the leaves of these trees make up most of their diet. Because this eucalypt diet has limited nutritional and caloric content, koalas are largely sedentary and sleep up to twenty hours a day. They are asocial animals, and bonding exists only between mothers and dependent offspring. Adult males communicate with loud bellows that intimidate rivals and attract mates. Males mark their presence with secretions from scent glands located on their chests. Being marsupials, koalas give birth to underdeveloped young that crawl into their mothers' pouches, where they stay for the first six to seven months of their lives. These young koalas, known as joeys, are fully weaned around a year old. Koalas have few natural predators and parasites, but are threatened by various pathogens, such as Chlamydiaceae bacteria and the koala retrovirus.
+</div>
+<br>
+<div class="par3">
+  <strong>Because of its distinctive appearance</strong> ,the koala is recognised worldwide as a symbol of Australia. They were hunted by Indigenous Australians and depicted in myths and cave art for millennia. The first recorded encounter between a European and a koala was in 1798, and an image of the animal was published in 1810 by naturalist George Perry. Botanist Robert Brown wrote the first detailed scientific description of the koala in 1814, although his work remained unpublished for 180 years. Popular artist John Gould illustrated and described the koala, introducing the species to the general British public. Further details about the animal's biology were revealed in the 19th century by several English scientists. Koalas are listed as a vulnerable species by the International Union for Conservation of Nature. Among the many threats to their existence are habitat destruction caused by agriculture, urbanisation, droughts, and associated bushfires, some related to climate change. In February of 2022, the koala was officially listed as endangered in the Australian Capital Territory, New South Wales, and Queensland.
+</div>
+<br>
+
+<br>
+<br>
+
+<script>
+
+      function loveKoala() {
+      let name = prompt ("What is your first name?")  
+      let koala = prompt ("Do you like koalas?");
+      let h1 = document.querySelector("h1")
+
+        if (koala === "no") {
+        alert("Sorry, " + name + "!" + "  I'm sure you have your own favoite animal.")
+     }  else {
+        h1.innerHTML = ("Hi, " + name +"!" + " So glad to have you on team Koala!")
+     }
+      }
+      
+      let contactButton = document.querySelector("button");
+      contactButton.addEventListener("click", loveKoala);
+
+    </script>
+</body>
+</html>
+Coded by Jessenia Fabian
